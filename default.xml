@@ -1,0 +1,26 @@
+# mirror-x86
+<?xml version="1.0" encoding="UTF-8">
+<manifest>
+
+  <remote   name="github"
+            fetch=".." />
+          
+  <remote   name="x86"
+            fetch="git://git.osdn.net/gitroot/android-x86/" />
+          
+  <default  revision="android-x86" 
+            remote name="github"
+            sync-j="4" />
+  
+  <!-- from x86 port repositories -->
+  <project name="manifest" remote="x86" />
+  <project name="platform/build" remote="x86" />
+  <project name="kernel/common" remote="x86" />
+  <project name="platform/art" remote="x86" />
+  
+  
+  <project name="platform/system/extras" remote="x86" />
+  <project name="platform/system/vold" remote="x86" />
+ 
+</manifest>
+  
