@@ -3,7 +3,7 @@
 <manifest>
 
   <remote   name="github"
-            fetch="https://github.com" />
+            fetch=".." />
           
   <remote   name="x86"
             fetch="git://git.osdn.net/gitroot/android-x86/" />
